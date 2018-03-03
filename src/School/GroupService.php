@@ -40,6 +40,7 @@ class GroupService
 
     /**
      * For backwards compatibility the GroupStore and PupilStore are optional.
+     * But by injecting the dependencies trough the constructor we can test the service.
      *
      * GroupService constructor.
      * @param GroupStore|null $groupStore
