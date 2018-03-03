@@ -62,7 +62,7 @@ class GroupService
      * @deprecated this method is being deprecated and will show a warning.
      * @see GroupService::assignPupilToGroup()
      */
-    public function add($groupId, $pupilId)
+    public function add($groupId, $pupilId): void
     {
         trigger_error('GroupService::add is deprecated. Please use GroupService::assignPupilToGroup.');
 
