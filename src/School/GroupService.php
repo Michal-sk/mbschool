@@ -26,7 +26,7 @@ class GroupService
      *
      * @var int
      */
-    private const MAX_PUPILS_IN_GROUP = 6;
+    private const MAX_PUPILS_IN_GROUP = 5;
 
     /**
      * @var GroupStore
@@ -110,7 +110,7 @@ class GroupService
     {
         $pupils = $group->getPupils() ?? [];
 
-        return count($pupils) < self::MAX_PUPILS_IN_GROUP;
+        return count($pupils) > self::MAX_PUPILS_IN_GROUP;
     }
 
     /**
