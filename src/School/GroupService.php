@@ -101,7 +101,7 @@ class GroupService
     }
 
     /**
-     * groupIsFull returns if the maximum amount of Pupils to a Group is reached.
+     * groupIsFull returns if the maximum amount of Pupils in a Group is reached.
      *
      * @param Group $group
      * @return bool
