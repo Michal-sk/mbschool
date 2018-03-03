@@ -121,7 +121,9 @@ class GroupService
      */
     private function pupilIsInGroup(Pupil $pupil, Group $group): bool
     {
-        foreach ($group->getPupils() as $pupilInGroup) {
+        $pupils = $group->getPupils() ?? [];
+
+        foreach ($pupils as $pupilInGroup) {
             if ($pupil->getId() === $pupilInGroup->getId()) {
                 return true;
             }
